@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/brilho" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="336dp"
+        android:layout_height="531dp"
+        android:background="#61BAB1"
+
+        android:backgroundTint="#95ECE0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:outlineSpotShadowColor="#398E85"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:id="@+id/ll_main_layout1"
+            android:layout_width="165dp"
+            android:layout_height="171dp"
+            android:background="#C1EAE6"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageButton
+                android:id="@+id/productsButton"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/icone_verproducto"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ver productos"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            android:background="#BFEAE6"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageButton
+                android:id="@+id/carButton"
+                android:layout_width="92dp"
+                android:layout_height="101dp"
+                app:srcCompat="@drawable/icone_carrocompras" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carro de compras"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="129dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_layout2"
+            android:layout_width="159dp"
+            android:layout_height="163dp"
+            android:background="#BFEAE6"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageButton
+                android:id="@+id/clientButton"
+                android:layout_width="101dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/iconecliente" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="82dp"
+                android:layout_height="34dp"
+                android:text="Ver Cliente"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="129dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
