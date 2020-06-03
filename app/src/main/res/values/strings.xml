@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Brilho</string>
+    <string name="total">TOTAL =</string>
+    <string name="preferences_file">MyPrefsFile</string>
+    <string name="is_admin">isAdmin</string>
+    <string name="user_id">user_id</string>
+
+</resources>
